@@ -1,6 +1,6 @@
 weather_list = ["Sunny", "Snowing", "Rainy", "Tropical"]
 sunny_location_list = ["Orlando, Florida", "Austin, Texas","Los Angeles, California"]
-sunny_hotel_list = ["Crowne Plaza Orlando", "Hyatt Regency Orlando", "Hilton Orlando","JW Marriott Austin", "The Westin Austin Downtown", "Hilton Garden Inn Cedar Park Austin","Millennium Biltmore Hotel Los Angeles", "The Wayfarer Downtown Los Angeles", "Freehand Los Angles"]
+sunny_hotel_list = ["Crowne Plaza Orlando", "Hyatt Regency Orlando", "Hilton Orlando","JW Marriott Austin", "The Westin Austin Downtown", "Hilton Garden Inn Cedar Park Austin","Millennium Biltmore Hotel Los Angeles", "The Wayfarer Downtown Los Angeles", "Freehand Los Angeles"]
 sunny_activity_list = ["Walt Disney World","Gatorland","Wonderworks","McKinney Falls", "State Park","Austin Zoo", "Cathedral of Junk","Universal","Studios-Hollywood","Dodgers Game", 
 "Hollywood Sign Hike"]
 
@@ -28,62 +28,77 @@ if vacation == "yes":
 if weather_choices == weather_list[0]:
   print("\n"+ sunny_location_list[0]+"\n"+sunny_location_list[1]+"\n"+sunny_location_list[2]+"\n")
   location_question = input("Out of the list above, which location would you prefer? ")
+
   if location_question == sunny_location_list[0]:
     print("\n"+sunny_hotel_list[0] + "\n" + sunny_hotel_list[1] + "\n" + sunny_hotel_list[2]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in sunny_hotel_list:
       print("\n"+sunny_activity_list[0] + "\n" + sunny_activity_list[1] + " \n" + sunny_activity_list[2]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print(final_trip)
+      print("\nYour vacation plan is:\n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+
   elif location_question == sunny_location_list[1]:
     print("\n"+sunny_hotel_list[3] + "\n" + sunny_hotel_list[4] + "\n" + sunny_hotel_list[5]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in sunny_hotel_list:
-      print("\n"+sunny_activity_list[3] + ",\n" + sunny_activity_list[4] + ",\n" + sunny_activity_list[5]+"\n")
+      print("\n"+sunny_activity_list[3] + "\n" + sunny_activity_list[4] + "\n" + sunny_activity_list[5]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print(final_trip)
+      print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+
   elif location_question == sunny_location_list[2]:
     print("\n"+sunny_hotel_list[6] + ",\n" + sunny_hotel_list[7] + ",\n" + sunny_hotel_list[8]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in sunny_hotel_list:
       print("\n"+sunny_activity_list[6] + ",\n" + sunny_activity_list[7] + ",\n" + sunny_activity_list[8]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? \n")
       final_trip = [weather_choices, location_question, hotel_question, activity_question] 
-      print(final_trip)
+      print("\n Your vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
       
 elif weather_choices == weather_list[1]:
   print(snowing_location_list)
   location_question = input("Out of the list above, which location would you prefer? ")
+
   if location_question == snowing_location_list[0]:
-    print("\n"+snowing_hotel_list[0] + ",\n" + snowing_hotel_list[1] + ",\n" + snowing_hotel_list[2]+"\n")
+    print("\n"+snowing_hotel_list[0] + "\n" + snowing_hotel_list[1] + "\n" + snowing_hotel_list[2]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in snowing_hotel_list:
-      print("\n"+snowing_activity_list[0] + ",\n " + snowing_activity_list[1] + ",\n" + snowing_activity_list[2]+"\n")
+      print("\n"+snowing_activity_list[0] + "\n " + snowing_activity_list[1] + "\n" + snowing_activity_list[2]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print(final_trip)
+      print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+
   elif location_question == snowing_location_list[1]:
-    print("\n"+snowing_hotel_list[3] + ",\n "+ snowing_hotel_list[4] + ",\n" + snowing_hotel_list[5]+"\n")
+    print("\n"+snowing_hotel_list[3] + "\n "+ snowing_hotel_list[4] + "\n" + snowing_hotel_list[5]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in snowing_hotel_list:
-      print("\n"+snowing_activity_list[3] + ",\n" + snowing_activity_list[4] + ",\n" + snowing_activity_list[5]+"\n")
+      print("\n"+snowing_activity_list[3] + "\n" + snowing_activity_list[4] + "\n" + snowing_activity_list[5]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print(final_trip)
+      print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+
   elif location_question == snowing_location_list[2]:
-    print("\n"+snowing_hotel_list[6] + ",\n" + snowing_hotel_list[7] + ",\n" + snowing_hotel_list[8]+"\n")
+    print("\n"+snowing_hotel_list[6] + "\n" + snowing_hotel_list[7] + "\n" + snowing_hotel_list[8]+"\n")
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
+
     if hotel_question in snowing_hotel_list:
-      print("\n"+snowing_activity_list[6] + ",\n" + snowing_activity_list[7] + ",\n" + snowing_activity_list[8]+"\n")
+      print("\n"+snowing_activity_list[6] + "\n" + snowing_activity_list[7] + "\n" + snowing_activity_list[8]+"\n")
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print("\n"  elif location_question == sunny_location_list[1]:
-    print("\n"+sunny_hotel_list[3] + ",\n" + sunny_hotel_list[4] + ",\n" + sunny_hotel_list[5])
+      print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+
+  elif location_question == sunny_location_list[1]:
+    print("\n"+sunny_hotel_list[3] + "\n" + sunny_hotel_list[4] + "\n" + sunny_hotel_list[5])
     hotel_question = input("Out of the list above, which hotel would you prefer? ")
-    if hotel_question == sunny_hotel_list[3] or sunny_hotel_list[4] or sunny_hotel_list[5]:
-      print("\n"+sunny_activity_list[3] + ",\n" + sunny_activity_list[4] + ",\n" + sunny_activity_list[5])
+
+    if hotel_question in sunny_hotel_list:
+      print("\n"+sunny_activity_list[3] + "\n" + sunny_activity_list[4] + "\n" + sunny_activity_list[5])
       activity_question = input("Out of the list above, which activity would you prefer? ")
       final_trip = [weather_choices, location_question, hotel_question, activity_question]
-      print("\n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+      print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
