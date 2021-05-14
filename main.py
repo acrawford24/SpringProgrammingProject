@@ -8,7 +8,7 @@ sunny_hotel_list = ["Crowne Plaza Orlando", "Hyatt Regency Orlando", "Hilton Orl
 #prices per night for sunny hotel options
 sunny_hotel_prices_list = ["$83", "$135", "$171", "$294", "$167", "$96", "$160", "$103", "$70"]
 # activity options if the user inputs something that is in the sunny_hotel_list
-sunny_activity_list = ["Walt Disney World","Gatorland","Wonderworks","McKinney Falls State Park","Austin Zoo", "Cathedral of Junk","Universal Studios-Hollywood","Dodgers Game", "Hollywood Sign Hike"]
+sunny_activity_list = ["Walt Disney World","Gatorland","Wonderworks","McKinney Falls State Park", "Austin Zoo", "Cathedral of Junk","Universal Studios-Hollywood","Dodgers Game", "Hollywood Sign Hike"]
 #prices for activity admissons under sunny options
 sunny_activity_prices_list = ["$109", "$30", "$35", "$6", "$15", "$5", "$119", "$88", "$0"]
 
@@ -52,7 +52,7 @@ while vacation == "no":
 # creates a function for the vacation planner
 def vacation_planner():
   
-# prints weather options and asks which one the user wnats
+# prints weather options and asks which one the user wants
   if vacation == "yes":
     print("\n" + weather_list[0] +"\n" + weather_list[1]+ "\n" + weather_list[2]+ "\n"+ weather_list[3]+"\n") 
     weather_choices = input("Out of the choices above, what weather would you prefer for your vacation?\n")
@@ -65,13 +65,26 @@ def vacation_planner():
     if location_question == sunny_location_list[0]:
       print("\n"+sunny_hotel_list[0] + "\n" + sunny_hotel_list[1] + "\n" + sunny_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="Crowne Plaza Orlando":
+        print("\n$83 a night")
+      elif hotel_question=="Hyatt Regency Orlando":
+        print("\n$135 a night")
+      else:
+        print("\n$171 a night")
 # orlando activity stuff
       if hotel_question in sunny_hotel_list:
         print("\n"+sunny_activity_list[0] + "\n" + sunny_activity_list[1] + "\n" + sunny_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Walt Disney World":
+          print("\n$109 a ticket")
+        elif activity_question=="Gatorland":
+          print("\n$30 a ticket")
+        else:
+          print("\n$35 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n"+ final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
+        
 # Austin hotel stuff
     elif location_question == sunny_location_list[1]:
       print("\n"+sunny_hotel_list[3] + "\n" + sunny_hotel_list[4] + "\n" + sunny_hotel_list[5]+"\n")
