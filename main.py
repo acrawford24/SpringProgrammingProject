@@ -123,7 +123,7 @@ def vacation_planner():
       if hotel_question in sunny_hotel_list:
         print("\n"+sunny_activity_list[6] + "\n" + sunny_activity_list[7] + "\n" + sunny_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? \n")
-         if activity_question=="Universal Studios-Hollywood":
+        if activity_question=="Universal Studios-Hollywood":
           print("\n$119 a ticket")
         elif activity_question=="Dodgers Game":
           print("\n$88 a ticket")
@@ -147,11 +147,11 @@ def vacation_planner():
         print("\n$179 a night")
       else:
         print("\n$144 a night")
-# juneau activity stuff
+# Juneau activity stuff
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[0] + "\n" + snowing_activity_list[1] + "\n" + snowing_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
-        if activity_question=="Patsy Ann Statue ":
+        if activity_question=="Patsy Ann Statue":
           print("\n$0 a ticket")
         elif activity_question=="Goldbelt Tram":
           print("\n$33 a ticket")
@@ -165,10 +165,22 @@ def vacation_planner():
     elif location_question == snowing_location_list[1]:
       print("\n"+snowing_hotel_list[3] + "\n "+ snowing_hotel_list[4] + "\n" + snowing_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="Boulder Marriott":
+        print("\n$140 a night")
+      elif hotel_question=="St.Julien Hotel & Spa":
+        print("\n$289 a night")
+      else:
+        print("\n$174 a night")
 # Boulder activity stuff
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[3] + "\n" + snowing_activity_list[4] + "\n" + snowing_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Flagstaff Mountain":
+          print("\n$0 a ticket")
+        elif activity_question=="Flatirons":
+          print("\n$0 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
@@ -177,10 +189,22 @@ def vacation_planner():
     elif location_question == snowing_location_list[2]:
       print("\n"+snowing_hotel_list[6] + "\n" + snowing_hotel_list[7] + "\n" + snowing_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="The Westin Downtown Cleveland":
+        print("\n$89 a night")
+      elif hotel_question=="Metropolitan at the 9":
+        print("\n$229 a night")
+      else:
+        print("\n$229 a night")
 # cleveland activity stuff
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[6] + "\n" + snowing_activity_list[7] + "\n" + snowing_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Rock and Roll Hall of Fame":
+          print("\n$28 a ticket")
+        elif activity_question=="West Side Market":
+          print("\n$0 a ticket")
+        else:
+          print("\n$15 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
@@ -193,10 +217,22 @@ def vacation_planner():
     if location_question == rainy_location_list[0]:
       print("\n"+rainy_hotel_list[0] + "\n" + rainy_hotel_list[1] + "\n" + rainy_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="Hyatt House Seattle/Downtown":
+        print("\n$134 a night")
+      elif hotel_question=="Warwick Seattle":
+        print("\n$89 a night")
+      else:
+        print("\n$122 a night")
 # seattle activity stuff
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[0] + "\n" + rainy_activity_list[1] + "\n" + rainy_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Pike Place Market":
+          print("\n$0 a ticket")
+        elif activity_question=="Space Needle":
+          print("\n$35 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3]) 
@@ -205,10 +241,22 @@ def vacation_planner():
     elif location_question == rainy_location_list[1]:
       print("\n"+rainy_hotel_list[3] + "\n"+ rainy_hotel_list[4] + "\n" + rainy_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="St. James Hotel New Orleans Downtown":
+        print("\n$99 a night")
+      elif hotel_question=="Embassy Suites by Hilton New Orleans":
+        print("\n$96 a night")
+      else:
+        print("\n$94 a night")
 # New Orleans activity stuff
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[3] + "\n" + rainy_activity_list[4] + "\n" + rainy_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="The National World War II Museum":
+          print("\n$29 a ticket")
+        elif activity_question=="Mardi Gras World":
+          print("\n$22 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
@@ -216,11 +264,23 @@ def vacation_planner():
 # Pittsburgh hotel stuff 
     elif location_question == rainy_location_list[2]:
       print("\n"+rainy_hotel_list[6] + "\n" + rainy_hotel_list[7] + "\n" + rainy_hotel_list[8]+"\n")
-      hotel_question = input("Out of the list above, which hotel would you prefer? ") 
+      hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="DoubleTree by Hilton Hotel & Suites Pittsburgh Downtown":
+        print("\n$146 a night")
+      elif hotel_question=="Fairmont Pittsburgh":
+        print("\n$200 a night")
+      else:
+        print("\n$178 a night")
 # Pittsburgh activity stuff
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[6] + "\n" + rainy_activity_list[7] + "\n" + rainy_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Point State Park":
+          print("\n$0 a ticket")
+        elif activity_question=="Carnegie Science Center":
+          print("\n$20 a ticket")
+        else:
+          print("\n$20 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
@@ -233,10 +293,22 @@ def vacation_planner():
     if location_question == tropical_location_list[0]:
       print("\n"+tropical_hotel_list[0] + "\n" + tropical_hotel_list[1] + "\n" + tropical_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="Hilton Hawaiian Village Waikiki Beach Resort":
+        print("\n$230 a night")
+      elif hotel_question=="Prince Waikiki- Honolulu Luxery Hotel":
+        print("\n$251 a night")
+      else:
+        print("\n$116 a night")
 # Honolulu activity stuff
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[0] + "\n" + tropical_activity_list[1] + "\n" + tropical_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Diamond Head":
+          print("\n$4 a ticket")
+        elif activity_question=="Pearl Harbor National Memorial":
+          print("\n$0 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3]) 
@@ -245,10 +317,22 @@ def vacation_planner():
     elif location_question == tropical_location_list[1]:
       print("\n"+tropical_hotel_list[3] + "\n"+ tropical_hotel_list[4] + "\n" + tropical_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
+      if hotel_question=="The St. Regis Bahia Beach Resort":
+        print("\n$971 a night")
+      elif hotel_question=="San Juan Water and Beach Club Hotel":
+        print("\n$139 a night")
+      else:
+        print("\n$1891 a night")
 # Puerto Rico activity stuff
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[3] + "\n" + tropical_activity_list[4] + "\n" + tropical_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="La Fortaleza":
+          print("\n$0 a ticket")
+        elif activity_question=="Castillo San Felipe del Morro":
+          print("\n$10 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
@@ -257,10 +341,22 @@ def vacation_planner():
     elif location_question == tropical_location_list[2]:
       print("\n"+tropical_hotel_list[6] + "\n" + tropical_hotel_list[7] + "\n" + tropical_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ") 
+      if hotel_question=="DoubleTree Resort by Hilton Hotel Grand Key - Key West ":
+        print("\n$489 a night")
+      elif hotel_question=="Courtyard by Marriott Key West Waterfront":
+        print("\n$825 a night")
+      else:
+        print("\n$459 a night")
 # Key west activity stuff
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[6] + "\n" + tropical_activity_list[7] + "\n" + tropical_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
+        if activity_question=="Mallory Square":
+          print("\n$0 a ticket")
+        elif activity_question=="Southernmost Point of the Continental US":
+          print("\n$0 a ticket")
+        else:
+          print("\n$0 a ticket")
 # final trip
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
