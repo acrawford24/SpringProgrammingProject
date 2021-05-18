@@ -18,9 +18,9 @@ A program that uses user input to plan a vaction. Through this you will get a de
 * The program will then output a list of weather options and ask "Out of the choices above, what weather would you prefer for your vacation?". The user must input one of the weather options.
 * The program will then output a list of locations and ask "Out of the list above, which location would you prefer?". The user must input one of the location options.
 * The program will then output a list of hotels and ask "Out of the list above, which hotel would you prefer?". The user must input one of the hotel options. Then the price per night of the chosen hotel will be output.
-* The program will then output a list of activities and ask "Out of the list above, which activity would you prefer?". The user must inout one of the activity options. Then the price of the chosen activity will be output.
+* The program will then output a list of activities and ask "Out of the list above, which activity would you prefer?". The user must input one of the activity options. Then the price of the chosen activity will be output.
 * The program will then output a list of all the options the user chose including weather, location, hotel, and activity. 
-* Lastly the user will be asked "Would you like to plan another vacation?", enter "yes" or "no". If no is input the program will end. If yes is input the program will run again, asking all the same questions. 
+* Lastly the user will be asked "Would you like to plan another vacation?", enter "yes" or "no". If "no" is input the program will end. If "yes" is input the program will run again, asking all the same questions. 
 
 ## Help 
 There should not be any bugs or issues in this program. If there is please use the contact info provided below. 
