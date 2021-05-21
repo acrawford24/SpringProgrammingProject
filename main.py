@@ -1,9 +1,17 @@
-#Weather Options
+"""
+Vacation Planner
+Created By: Abbie, Cara, and Payton
+
+We created a vacation planner. The program will ask the user multiple questions and the user needs to input one of the options given to them. By the end of the program the user will have a vacation planned for them. Then the user will have the option to paln another vacation if they would like. 
+
+"""
+
+#list for the user to choose the weather they want on their vacation 
 weather_list = ["Sunny", "Snowing", "Rainy", "Tropical"]
 
-#Location options for sunny weather
+#list for the location the user can pick from if they choose sunny as thier weather 
 sunny_location_list = ["Orlando, Florida", "Austin, Texas","Los Angeles, California"]
-#Hotel options for sunny weather
+#list for the location the user can pick from if they choose sunny as thier weather 
 sunny_hotel_list = ["Crowne Plaza Orlando", "Hyatt Regency Orlando", "Hilton Orlando","JW Marriott Austin", "The Westin Austin Downtown", "Hilton Garden Inn Cedar Park Austin","Millennium Biltmore Hotel Los Angeles", "The Wayfarer Downtown Los Angeles", "Freehand Los Angeles"]
 #Prices per night for sunny hotel options
 sunny_hotel_prices_list = ["$83", "$135", "$171", "$294", "$167", "$96", "$160", "$103", "$70"]
@@ -12,7 +20,7 @@ sunny_activity_list = ["Walt Disney World","Gatorland","Wonderworks","McKinney F
 #Prices for activity admissons under sunny options
 sunny_activity_prices_list = ["$109", "$30", "$35", "$6", "$15", "$5", "$119", "$88", "$0"]
 
-#Location options for snowing weather
+#list for the location the user can pick from if they choose snowy as thier weather 
 snowing_location_list = ["Juneau, Alaska", "Boulder, Colorado", "Cleveland, Ohio"]
 #Hotel options for snowing weather
 snowing_hotel_list = ["Four Points by Sheraton Juneau", "Silverbow Inn Hotel & Suites", "Aspen Suites Hotel Juneau","Boulder Marriott", "St.Julien Hotel & Spa", "Residence Inn by Marriott Boulder Canyon Boulevard","The Westin Downtown Cleveland", "Metropolitan at the 9", "Rennisance Cleveland Hotel"]
@@ -23,7 +31,7 @@ snowing_activity_list = ["Patsy Ann Statue", "Goldbelt Tram ", "Juneau Wildlife 
 #Prices for activity admissons under snowing options
 snowing_activity_prices_list = ["$0", "$33", "$157", "$0", "$0", "$0", "$28", "$0", "$15"]
 
-#Location options for rainy weather
+#list for the location the user can pick from if they choose rainy as thier weather 
 rainy_location_list = ["Seattle, Washington","New Orleans, Lousianna","Pittsburgh, Pennsylvania"]
 #Hotel options for rainy weather
 rainy_hotel_list = ["Hyatt House Seattle/Downtown", "Warwick Seattle","The Paramount Hotel","St. James Hotel New Orleans Downtown","Embassy Suites by Hilton New Orleans", "Hampton Inn & Suites New Orleans Downtown","DoubleTree by Hilton Hotel & Suites Pittsburgh Downtown", "Fairmont Pittsburgh", "Kimpton Hotel Monaco Pittsburgh"]
@@ -34,7 +42,7 @@ rainy_activity_list = ["Pike Place Market","Space Needle","The Gum Wall","The Na
 #Prices for activity admissons under rainy options
 rainy_activity_prices_list = ["$0", "$35", "0", "$29", "$22", "$0", "$0", "$20", "$20"]
 
-#Location options for tropical weather
+#list for the location the user can pick from if they choose tropical as thier weather 
 tropical_location_list = ["Honolulu, Hawaii", "Puerto Rico", "Key West, Florida"]
 #Hotel options for tropical weather
 tropical_hotel_list = ["Hilton Hawaiian Village Waikiki Beach Resort", "Prince Waikiki - Honolulu Luxury Hotel", "Hotel Renew", "The St. Regis Bahia Beach Resort, Puerto Rico", "San Juan Water and Beach Club Hotel", "Dorado Beach, a Ritz-Carlton Reserve", "DoubleTree Resort by Hilton Hotel Grand Key - Key West", "Courtyard by Marriott Key West Waterfront", "Hyatt Residence Club Key West, Windward Pointe"]
@@ -52,7 +60,7 @@ while vacation == "no":
 
 #Creates a function for the vacation planner
 def vacation_planner():
-  
+ 
 #Prints weather options and asks which one the user wants
   if vacation == "yes":
     print("\n" + weather_list[0] +"\n" + weather_list[1]+ "\n" + weather_list[2]+ "\n"+ weather_list[3]+"\n") 
