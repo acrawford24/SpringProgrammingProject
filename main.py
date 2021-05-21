@@ -11,46 +11,46 @@ weather_list = ["Sunny", "Snowing", "Rainy", "Tropical"]
 
 #list for the location the user can pick from if they choose sunny as thier weather 
 sunny_location_list = ["Orlando, Florida", "Austin, Texas","Los Angeles, California"]
-#list for the location the user can pick from if they choose sunny as thier weather 
+#list for the hotels the user can pick from if they choose a location under sunny
 sunny_hotel_list = ["Crowne Plaza Orlando", "Hyatt Regency Orlando", "Hilton Orlando","JW Marriott Austin", "The Westin Austin Downtown", "Hilton Garden Inn Cedar Park Austin","Millennium Biltmore Hotel Los Angeles", "The Wayfarer Downtown Los Angeles", "Freehand Los Angeles"]
-#Prices per night for sunny hotel options
+#the prices in the same order as the hotels, to let the user know the price per night of the hotel 
 sunny_hotel_prices_list = ["$83", "$135", "$171", "$294", "$167", "$96", "$160", "$103", "$70"]
-#Activity options for sunny weather
+#the activities the user can pick from if they choose a location under tropical
 sunny_activity_list = ["Walt Disney World","Gatorland","Wonderworks","McKinney Falls State Park", "Austin Zoo", "Cathedral of Junk","Universal Studios-Hollywood","Dodgers Game", "Hollywood Sign Hike"]
-#Prices for activity admissons under sunny options
+#Prices for sunny activity admissons in order with the activities
 sunny_activity_prices_list = ["$109", "$30", "$35", "$6", "$15", "$5", "$119", "$88", "$0"]
 
 #list for the location the user can pick from if they choose snowy as thier weather 
 snowing_location_list = ["Juneau, Alaska", "Boulder, Colorado", "Cleveland, Ohio"]
-#Hotel options for snowing weather
+#list for the hotels the user can pick from if they choose a location under snowing
 snowing_hotel_list = ["Four Points by Sheraton Juneau", "Silverbow Inn Hotel & Suites", "Aspen Suites Hotel Juneau","Boulder Marriott", "St.Julien Hotel & Spa", "Residence Inn by Marriott Boulder Canyon Boulevard","The Westin Downtown Cleveland", "Metropolitan at the 9", "Rennisance Cleveland Hotel"]
-#Prices per night for snowing hotel options
+#the prices in the same order as the hotels, to let the user know the price per night of the hotel 
 snowing_hotel_prices_list = ["$239", "$179", "$144", "$140", "$289", "$174", "$89", "$229", "$229"]
-#Activity options for snowing weather
+#the activities the user can pick from if they choose a location under tropical
 snowing_activity_list = ["Patsy Ann Statue", "Goldbelt Tram ", "Juneau Wildlife Whale Watching & Mendenhall Glacier", "Flagstaff Mountain", "Flatirons", "Royal Arch Trail", "Rock and Roll Hall of Fame", "West Side Market", "A Christmas Story House"]
-#Prices for activity admissons under snowing options
+#Prices for snowy activity admissons in order with the activities
 snowing_activity_prices_list = ["$0", "$33", "$157", "$0", "$0", "$0", "$28", "$0", "$15"]
 
 #list for the location the user can pick from if they choose rainy as thier weather 
 rainy_location_list = ["Seattle, Washington","New Orleans, Lousianna","Pittsburgh, Pennsylvania"]
-#Hotel options for rainy weather
+#list for the hotels the user can pick from if they choose a location under sunny
 rainy_hotel_list = ["Hyatt House Seattle/Downtown", "Warwick Seattle","The Paramount Hotel","St. James Hotel New Orleans Downtown","Embassy Suites by Hilton New Orleans", "Hampton Inn & Suites New Orleans Downtown","DoubleTree by Hilton Hotel & Suites Pittsburgh Downtown", "Fairmont Pittsburgh", "Kimpton Hotel Monaco Pittsburgh"]
-#Prices per night for rainy hotel options
+#the prices in the same order as the hotels, to let the user know the price per night of the hotel 
 rainy_hotel_prices_list = ["$134", "$89", "$122", "$99", "$96", "$94", "$146", "$200", "$178"]
-#Activity options for rainy weather
+#the activities the user can pick from if they choose a location under tropical
 rainy_activity_list = ["Pike Place Market","Space Needle","The Gum Wall","The National World War II Museum","Mardi Gras World","Bourbon Street","Point State Park","Carnegie Science Center","The Andy Warhol Museum"]
-#Prices for activity admissons under rainy options
+#Prices for rainy activity admissons in order with the activities
 rainy_activity_prices_list = ["$0", "$35", "0", "$29", "$22", "$0", "$0", "$20", "$20"]
 
 #list for the location the user can pick from if they choose tropical as thier weather 
 tropical_location_list = ["Honolulu, Hawaii", "Puerto Rico", "Key West, Florida"]
-#Hotel options for tropical weather
+#list for the hotels the user can pick from if they choose a location under tropical
 tropical_hotel_list = ["Hilton Hawaiian Village Waikiki Beach Resort", "Prince Waikiki - Honolulu Luxury Hotel", "Hotel Renew", "The St. Regis Bahia Beach Resort, Puerto Rico", "San Juan Water and Beach Club Hotel", "Dorado Beach, a Ritz-Carlton Reserve", "DoubleTree Resort by Hilton Hotel Grand Key - Key West", "Courtyard by Marriott Key West Waterfront", "Hyatt Residence Club Key West, Windward Pointe"]
-#Prices per night for tropical hotel options
+#the prices in the same order as the hotels, to let the user know the price per night of the hotel 
 tropical_hotel_prices_list = ["$230", "$251", "$116", "$971", "$139", "$1891", "$489", "$825", "$459"]
-#Activity options for tropical weather
+#the activities the user can pick from if they choose a location under tropical
 tropical_activity_list = ["Diamond Head", "Pearl Harbor National Memorial", "Manoa Falls", "Bahía Bioluminiscente", "Castillo San Felipe del Morro", "La Fortaleza", "Southernmost Point of the Continental US", "Mallory Square", "Dog Beach"]
-#Prices for activity admissons under tropical options
+##Prices for tropical activity admissons in order with the activities
 tropical_activity_prices_list = ["$4", "$0", "$0", "$0", "$10", "$0", "$0", "$0", "$0"]
 
 vacation = input("Do you want to take a vacation? ").lower()
@@ -66,11 +66,11 @@ def vacation_planner():
     print("\n" + weather_list[0] +"\n" + weather_list[1]+ "\n" + weather_list[2]+ "\n"+ weather_list[3]+"\n") 
     weather_choices = input("Out of the choices above, what weather would you prefer for your vacation?\n")
 
-#Sunny location stuff
+#Sunny location stuff; Asks the user which sunny location they would like.
   if weather_choices == weather_list[0]:
     print("\n"+ sunny_location_list[0]+"\n"+sunny_location_list[1]+"\n"+sunny_location_list[2]+"\n")
     location_question = input("Out of the list above, which location would you prefer? ")
-#Orlando hotel stuff
+#Orlando hotel stuff; Asks the user which hotel they would like if they chose Orlando as their vacation destination.
     if location_question == sunny_location_list[0]:
       print("\n"+sunny_hotel_list[0] + "\n" + sunny_hotel_list[1] + "\n" + sunny_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -80,7 +80,7 @@ def vacation_planner():
         print("\n$135 a night")
       else:
         print("\n$171 a night")
-#Orlando activity stuff
+#Orlando activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Orlando as their vacation destination.
       if hotel_question in sunny_hotel_list:
         print("\n"+sunny_activity_list[0] + "\n" + sunny_activity_list[1] + "\n" + sunny_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -90,11 +90,11 @@ def vacation_planner():
           print("\n$30 a ticket")
         else:
           print("\n$35 a ticket")
-#Final trip
+#Final trip; Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n"+ final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Austin hotel stuff
+#Austin hotel stuff; Asks the user which hotel they would like if they chose Austin as their vacation destination.
     elif location_question == sunny_location_list[1]:
       print("\n"+sunny_hotel_list[3] + "\n" + sunny_hotel_list[4] + "\n" + sunny_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -104,7 +104,7 @@ def vacation_planner():
         print("\n$167 a night")
       else:
         print("\n$96 a night")
-#Austin activity stuff
+#Austin activity stuff;Asks the user which activity they would like and outputs the price of the chosen activity if they chose Austin as their vacation destination.
       if hotel_question in sunny_hotel_list:
         print("\n"+sunny_activity_list[3] + "\n" + sunny_activity_list[4] + "\n" + sunny_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -114,11 +114,11 @@ def vacation_planner():
           print("\n$15 a ticket")
         else:
           print("\n$5 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Los Angeles hotel stuff
+#Los Angeles hotel stuff;Asks the user which hotel they would like if they chose Los Angeles as their vacation destination.
     elif location_question == sunny_location_list[2]:
       print("\n"+sunny_hotel_list[6] + "\n" + sunny_hotel_list[7] + "\n" + sunny_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -128,7 +128,7 @@ def vacation_planner():
         print("\n$103 a night")
       else:
         print("\n$70 a night")
-#Los Angeles activity stuff
+#Los Angeles activity stuff;Asks the user which activity they would like and outputs the price of the chosen activity if they chose Los Angeles as their vacation destination.
       if hotel_question in sunny_hotel_list:
         print("\n"+sunny_activity_list[6] + "\n" + sunny_activity_list[7] + "\n" + sunny_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? \n")
@@ -138,15 +138,15 @@ def vacation_planner():
           print("\n$88 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip; Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question] 
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Snowing location stuff 
+#Snowing location stuff; Asks the user which snowing location they would like.
   elif weather_choices == weather_list[1]:
     print("\n"+snowing_location_list[0]+"\n"+snowing_location_list[1]+"\n"+snowing_location_list[2]+"\n")
     location_question = input("Out of the list above, which location would you prefer? ")
-#Juneau hotel stuff
+#Juneau hotel stuff; Asks the user which hotel they would like if they chose Juneau as their vacation destination.
     if location_question == snowing_location_list[0]:
       print("\n"+snowing_hotel_list[0] + "\n" + snowing_hotel_list[1] + "\n" + snowing_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -156,7 +156,7 @@ def vacation_planner():
         print("\n$179 a night")
       else:
         print("\n$144 a night")
-#Juneau activity stuff
+#Juneau activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Juneau as their vacation destination.
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[0] + "\n" + snowing_activity_list[1] + "\n" + snowing_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -166,11 +166,11 @@ def vacation_planner():
           print("\n$33 a ticket")
         else:
           print("\n$157 a ticket")
-#Final trip
+#Final trip; Outputs the users final trip choices which includes weather, location, hotel, and activity.
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Boulder hotel stuff
+#Boulder hotel stuff; Asks the user which hotel they would like if they chose Boulder as their vacation destination.
     elif location_question == snowing_location_list[1]:
       print("\n"+snowing_hotel_list[3] + "\n "+ snowing_hotel_list[4] + "\n" + snowing_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -180,7 +180,7 @@ def vacation_planner():
         print("\n$289 a night")
       else:
         print("\n$174 a night")
-#Boulder activity stuff
+#Boulder activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Boulder as their vacation destination.
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[3] + "\n" + snowing_activity_list[4] + "\n" + snowing_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -190,11 +190,11 @@ def vacation_planner():
           print("\n$0 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Cleveland hotel stuff
+#Cleveland hotel stuff; Asks the user which hotel they would like if they chose Cleveland as their vacation destination.
     elif location_question == snowing_location_list[2]:
       print("\n"+snowing_hotel_list[6] + "\n" + snowing_hotel_list[7] + "\n" + snowing_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -204,7 +204,7 @@ def vacation_planner():
         print("\n$229 a night")
       else:
         print("\n$229 a night")
-#Cleveland activity stuff
+#Cleveland activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Cleveland as their vacation destination.
       if hotel_question in snowing_hotel_list:
         print("\n"+snowing_activity_list[6] + "\n" + snowing_activity_list[7] + "\n" + snowing_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -214,15 +214,15 @@ def vacation_planner():
           print("\n$0 a ticket")
         else:
           print("\n$15 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Rainy location stuff
+#Rainy location stuff; Asks the user which rainy location they would like
   elif weather_choices == weather_list[2]:
     print("\n"+ rainy_location_list[0] + "\n"+ rainy_location_list[1]+ "\n"+ rainy_location_list[2]+"\n")
     location_question = input("Out of the list above, which location would you prefer? ")
-#Seattle hotel stuff
+#Seattle hotel stuff; Asks the user which hotel they would like if they chose Seattle as their vacation destination.
     if location_question == rainy_location_list[0]:
       print("\n"+rainy_hotel_list[0] + "\n" + rainy_hotel_list[1] + "\n" + rainy_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -232,7 +232,7 @@ def vacation_planner():
         print("\n$89 a night")
       else:
         print("\n$122 a night")
-#Seattle activity stuff
+#Seattle activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Seattle as their vacation destination.
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[0] + "\n" + rainy_activity_list[1] + "\n" + rainy_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -242,11 +242,11 @@ def vacation_planner():
           print("\n$35 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3]) 
 
-#New Orleans hotel stuff
+#New Orleans hotel stuff; Asks the user which hotel they would like if they chose New Orleans as their vacation destination.
     elif location_question == rainy_location_list[1]:
       print("\n"+rainy_hotel_list[3] + "\n"+ rainy_hotel_list[4] + "\n" + rainy_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -256,7 +256,7 @@ def vacation_planner():
         print("\n$96 a night")
       else:
         print("\n$94 a night")
-#New Orleans activity stuff
+#New Orleans activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose New Orleans as their vacation destination.
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[3] + "\n" + rainy_activity_list[4] + "\n" + rainy_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -266,11 +266,11 @@ def vacation_planner():
           print("\n$22 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Pittsburgh hotel stuff 
+#Pittsburgh hotel stuff; Asks the user which hotel they would like if they chose Pittsburgh as their vacation destination. 
     elif location_question == rainy_location_list[2]:
       print("\n"+rainy_hotel_list[6] + "\n" + rainy_hotel_list[7] + "\n" + rainy_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -280,7 +280,7 @@ def vacation_planner():
         print("\n$200 a night")
       else:
         print("\n$178 a night")
-#Pittsburgh activity stuff
+#Pittsburgh activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Pittsburgh as their vacation destination.
       if hotel_question in rainy_hotel_list:
         print("\n"+rainy_activity_list[6] + "\n" + rainy_activity_list[7] + "\n" + rainy_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -290,15 +290,15 @@ def vacation_planner():
           print("\n$20 a ticket")
         else:
           print("\n$20 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Tropical location stuuff
+#Tropical location stuff; Asks the user which tropical location they would like
   elif weather_choices == weather_list[3]:
     print("\n"+ tropical_location_list[0] + "\n"+ tropical_location_list[1]+ "\n"+ tropical_location_list[2]+"\n")
     location_question = input("Out of the list above, which location would you prefer? ")
-#Honolulu hotel stuff
+#Honolulu hotel stuff; Asks the user which hotel they would like if they chose Honolulu as their vacation destination.
     if location_question == tropical_location_list[0]:
       print("\n"+tropical_hotel_list[0] + "\n" + tropical_hotel_list[1] + "\n" + tropical_hotel_list[2]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -308,7 +308,7 @@ def vacation_planner():
         print("\n$251 a night")
       else:
         print("\n$116 a night")
-#Honolulu activity stuff
+#Honolulu activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Honolulu as their vacation destination.
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[0] + "\n" + tropical_activity_list[1] + "\n" + tropical_activity_list[2]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -318,11 +318,11 @@ def vacation_planner():
           print("\n$0 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3]) 
 
-#Puerto Rico hotel stuff
+#Puerto Rico hotel stuff; Asks the user which hotel they would like if they chose Puerto Rico as their vacation destination.
     elif location_question == tropical_location_list[1]:
       print("\n"+tropical_hotel_list[3] + "\n"+ tropical_hotel_list[4] + "\n" + tropical_hotel_list[5]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
@@ -332,7 +332,7 @@ def vacation_planner():
         print("\n$139 a night")
       else:
         print("\n$1891 a night")
-#Puerto Rico activity stuff
+#Puerto Rico activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Puerto Rico as their vacation destination.
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[3] + "\n" + tropical_activity_list[4] + "\n" + tropical_activity_list[5]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -342,11 +342,11 @@ def vacation_planner():
           print("\n$10 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Key West hotel stuff
+#Key West hotel stuff; Asks the user which hotel they would like if they chose Key West as their vacation destination.
     elif location_question == tropical_location_list[2]:
       print("\n"+tropical_hotel_list[6] + "\n" + tropical_hotel_list[7] + "\n" + tropical_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ") 
@@ -356,7 +356,7 @@ def vacation_planner():
         print("\n$825 a night")
       else:
         print("\n$459 a night")
-#Key West activity stuff
+#Key West activity stuff; Asks the user which activity they would like and outputs the price of the chosen activity if they chose Key West as their vacation destination.
       if hotel_question in tropical_hotel_list:
         print("\n"+tropical_activity_list[6] + "\n" + tropical_activity_list[7] + "\n" + tropical_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? ")
@@ -366,7 +366,7 @@ def vacation_planner():
           print("\n$0 a ticket")
         else:
           print("\n$0 a ticket")
-#Final trip
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
