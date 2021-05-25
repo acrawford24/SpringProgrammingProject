@@ -106,9 +106,8 @@ def vacation_planner():
           print("\n$30 a ticket")
         else:
           print("\n$35 a ticket")
-        activity_loop_question = input("Would you like to pick another activity? ").lower()
 #Final trip; Outputs the users final trip choices which includes weather, location, hotel, and activity. 
-        final_trip = [weather_choices, location_question, hotel_question, activity_question, activity_question2]
+        final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n"+ final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
 #Austin hotel stuff; Asks the user which hotel they would like if they chose Austin as their vacation destination.
@@ -383,10 +382,12 @@ def vacation_planner():
           print("\n$0 a ticket")
         else:
           print("\n$0 a ticket")
-
+#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
+        final_trip = [weather_choices, location_question, hotel_question,activity_question]
+        print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
 #Windy location stuff; Asks the user which windy location they would like.
-  if weather_choices == weather_list[3]:
+  if weather_choices == weather_list[4]:
     print("\n"+ windy_location_list[0]+"\n"+windy_location_list[1]+"\n"+windy_location_list[2]+"\n")
     location_question = input("Out of the list above, which location would you prefer? ")
 #Chicago hotel stuff; Asks the user which hotel they would like if they chose Chicago as their vacation destination.
@@ -413,9 +414,11 @@ def vacation_planner():
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n"+ final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
+
+
 #Amarillo hotel stuff; Asks the user which hotel they would like if they chose Amarillo as their vacation destination.
-    elif location_question == sunny_location_list[1]:
-      print("\n"+windy_hotel_list[3] + "\n" + windy_hotel_list[4] + "\n" + windy_hotel_list[5]+"\n")
+    elif location_question == windy_location_list[0]:
+      print("\n"+windy_hotel_list[1] + "\n" + windy_hotel_list[2] + "\n" + windy_hotel_list[3]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
       if hotel_question=="Hyatt Place Amarillo - West":
         print("\n$109 a night")
@@ -429,40 +432,36 @@ def vacation_planner():
         activity_question = input("Out of the list above, which activity would you prefer? ")
         if activity_question=="Cowgirls and Cowboys in the West":
           print("\n$69 a ticket")
-        elif activity_question=="Austin Zoo":
-          print("\n$15 a ticket")
+        elif activity_question=="Don Harrington Discovery Center":
+          print("\n$14 a ticket")
         else:
-          print("\n$5 a ticket")
+          print("\n$27 a ticket")
 #Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is:\n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
-#Los Angeles hotel stuff;Asks the user which hotel they would like if they chose Los Angeles as their vacation destination.
-    elif location_question == sunny_location_list[2]:
-      print("\n"+sunny_hotel_list[6] + "\n" + sunny_hotel_list[7] + "\n" + sunny_hotel_list[8]+"\n")
+#Salt Lake City hotel stuff;Asks the user which hotel they would like if they chose Salt Lake City as their vacation destination.
+    elif location_question == windy_location_list[2]:
+      print("\n"+windy_hotel_list[6] + "\n" + windy_hotel_list[7] + "\n" + windy_hotel_list[8]+"\n")
       hotel_question = input("Out of the list above, which hotel would you prefer? ")
-      if hotel_question=="Millennium Biltmore Hotel Los Angeles":
-        print("\n$160 a night")
-      elif hotel_question=="The Wayfarer Downtown Los Angeles":
-        print("\n$103 a night")
+      if hotel_question=="The Grand America Hotel":
+        print("\n$227 a night")
+      elif hotel_question=="Salt Lake City Marriott City Center":
+        print("\n$179 a night")
       else:
-        print("\n$70 a night")
-#Los Angeles activity stuff;Asks the user which activity they would like and outputs the price of the chosen activity if they chose Los Angeles as their vacation destination.
-      if hotel_question in sunny_hotel_list:
-        print("\n"+sunny_activity_list[6] + "\n" + sunny_activity_list[7] + "\n" + sunny_activity_list[8]+"\n")
+        print("\n$66 a night")
+#Salt Lake City activity stuff;Asks the user which activity they would like and outputs the price of the chosen activity if they chose Salt Lake City as their vacation destination.
+      if hotel_question in windy_hotel_list:
+        print("\n"+windy_activity_list[6] + "\n" + windy_activity_list[7] + "\n" + windy_activity_list[8]+"\n")
         activity_question = input("Out of the list above, which activity would you prefer? \n")
-        if activity_question=="Universal Studios-Hollywood":
-          print("\n$119 a ticket")
-        elif activity_question=="Dodgers Game":
-          print("\n$88 a ticket")
-        else:
+        if activity_question=="Salt Lake Plaza Hotel at Temple Square":
           print("\n$0 a ticket")
+        elif activity_question=="Lake Blanche Trail":
+          print("\n$0 a ticket")
+        else:
+          print("\n$140 a ticket")
 #Final trip; Outputs the users final trip choices which includes weather, location, hotel, and activity. 
         final_trip = [weather_choices, location_question, hotel_question, activity_question] 
-        print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
-  
-#Final trip;Outputs the users final trip choices which includes weather, location, hotel, and activity. 
-        final_trip = [weather_choices, location_question, hotel_question, activity_question]
         print("\nYour vacation plan is: \n" + final_trip[0]+ "\n" + final_trip[1]+"\n" + final_trip[2] +"\n" + final_trip[3])
 
 #Calls the vacation planner function
