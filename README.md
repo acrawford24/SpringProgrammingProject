@@ -10,6 +10,9 @@ A program that uses user input to plan a vaction. Through this you will get a de
  
 ### Dependencies 
 * The only thing you should need in order to fork this repl is a repl.it account, if you just want to run the program to plan a vacation you should be able to wihtout an account.
+* When asked "Do you want to take a vacation?", you must enter "yes" or "no". 
+* Any other time the user is asked a question they should respond with the weather/location/hotel/activity spelled exactly how it was ouput to them.
+* If an error occurs the user spelled something wrong, so check the spelling of what was input and re-run the program.
 ### Installing
 * You can fork this program on Repl.it
 
@@ -37,6 +40,8 @@ There should not be any bugs or issues in this program. If there is please use t
     * Locations, Activities, and Prices 
 * 0.3
     * Comments
+* 0.4
+    * Windy Weather Choice
 
 ## License 
 MIT License
